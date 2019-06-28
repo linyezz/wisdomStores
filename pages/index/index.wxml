@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+<i-button 
+type="primary" 
+bind:click="handleClick">
+click</i-button>
+</view>
