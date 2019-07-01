@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="phone-item">
+    <view class="icon">
+    <i-icon type="mobilephone_fill" />
+    </view>
+    <input 
+    value="{{phoneNum}}" 
+    type="number" 
+    class="phone-input" 
+    placeholder="请输入您的手机号码"></input>
+    <view bindtap="clearPhone" class="close-icon"><i-icon type="delete_fill" /></view>
+  </view>
+
+  <view class="code-item">
+    <view class="icon"><i-icon type="message" /></view>
+    <input type="number" class="phone-input" placeholder='请输入验证码'></input>
+    <view class="get-code">获取验证码</view>
+  </view>
+  <view class="allow-deal">
+   <checkbox class="checkbox" value="{{is_agree}}" checked="{{checked}}"/>
+   <navigator class="nav" url="/pages/approve/cover/cover">《会员账户及相关服务协议》</navigator>
+  </view>
+  
+<view class="btn">
+  <button>下一步</button>
+</view>
+</view>

@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  height: 320rpx;
+  background-image: linear-gradient(135deg, #7984FF 0%, #4298EC 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.middle{
+  margin-top: 60rpx;
+  text-align: center;
+}
+.success-icon{
+  width: 100%;
+  text-align: center;
+  color: #1890FF;
+}
+.success-tips1{
+  margin-top: 60rpx;
+  font-size: 40rpx;
+  font-weight: 600;
+  
+}
+.success-tips2{
+  margin-top: 60rpx;
+  font-size: 40rpx;
+  font-weight: 300;
+  
+}
+
+.recharge{
+   width: 676rpx;
+  height: 90rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 45rpx;
+  background: #1890FF;
+  margin-top: 200rpx;
+}
+.tohome{
+  margin-top: 20rpx;
+  font-size: 40rpx;
+  text-align: center;
+}

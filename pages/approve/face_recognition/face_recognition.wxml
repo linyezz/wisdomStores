@@ -1,0 +1,46 @@
+<view class="container">
+  <view class="header">
+    <view class="i-steps-box">
+      <i-steps>
+        <i-step status="finish">
+          <view slot="title">
+            身份认证
+          </view>
+
+        </i-step>
+        <i-step status="process">
+          <view slot="title">
+            人脸识别
+          </view>
+
+        </i-step>
+        <i-step status="">
+          <view slot="title">
+            注册成功
+          </view>
+
+        </i-step>
+      </i-steps>
+    </view>
+  </view>
+  
+<view class='middle'>
+  <view class="text-tip1">人脸识别</view>
+  <image class="rec-img"></image>
+  <view class="text-tip2">录制肖像需求</view>
+  <ul class="need-item">
+    <li class='left'>
+      <view class="need-tips">请勿佩戴帽子</view>
+      <view class="need-tips">拍摄场景光线充足</view>
+    </li>
+     <li class='right'>
+      <view class="need-tips">请勿佩戴眼镜</view>
+      <view class="need-tips">面朝屏幕中央</view>
+    </li>
+  </ul>
+</view>
+
+  <view class="btn" bindtap="beginStart">
+    <button>开始录制</button>
+  </view>
+</view>

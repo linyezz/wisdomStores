@@ -1,0 +1,24 @@
+camera{
+  position: relative;
+}
+.take-btn{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%,0);
+  left: 50%;
+  bottom: 60rpx;
+  background: #D8D8D8;
+}
+.biaochi{
+  background:#D8D8D8;
+  position: absolute;
+}
+.card-box{
+  position: absolute;
+  top: 120rpx;
+  height: 960rpx;
+  width:600rpx;
+  border: 2rpx solid #D8D8D8;
+}

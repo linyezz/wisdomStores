@@ -31,13 +31,66 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 6,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/approve/cover/cover",
+					"pathName": "pages/approve/cover/cover",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/approve/id_card/id_card",
+					"pathName": "pages/approve/id_card/id_card",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/approve/face_recognition/face_recognition",
+					"pathName": "pages/approve/face_recognition/face_recognition",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/approve/face_recognition/success",
+					"pathName": "pages/approve/face_recognition/success",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/approve/success/success",
+					"pathName": "pages/approve/success/success",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/camera/takeCardPhoto/takeCardPhoto",
+					"pathName": "pages/camera/takeCardPhoto/takeCardPhoto",
+					"scene": null
+				}
+			]
 		}
 	}
 }

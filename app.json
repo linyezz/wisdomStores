@@ -1,7 +1,13 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/login/login",
+    "pages/approve/cover/cover",
+    "pages/approve/id_card/id_card",
+    "pages/approve/face_recognition/face_recognition",
+    "pages/approve/success/success",
+    "pages/camera/takeCardPhoto/takeCardPhoto",
+    "pages/camera/upidCard/upidCard"
   ],
   "window": {
     "backgroundTextStyle": "light",

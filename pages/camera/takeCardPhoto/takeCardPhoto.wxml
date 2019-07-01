@@ -1,0 +1,11 @@
+<view style='width:{{width}}px; height:{{height}}px; overflow:hidden;'>
+    <camera device - position="back" flash = "off" style="width:{{width}}px; height:{{height}}px; margin-left:0px">
+ <!-- <cover-view class= 'biaochi' style = 'top:{{gap}}px; left:{{gap}}px; width:{{width-gap*2}}px; height:2px;'> </cover-view>
+  <cover-view class= 'biaochi' style = 'top:{{gap+50}}px; left:{{gap}}px; width:{{width-gap*2}}px; height:2px;'> </cover-view>
+  <cover-view class= 'biaochi' style = 'top:{{gap}}px; right:{{gap}}px; width:2px; height:50px;'> </cover-view>
+  <cover-view class= 'biaochi' style = 'top:{{gap}}px; left:{{gap}}px; width:2px; height:50px;'> </cover-view> -->
+  <cover-view class="card-box" style="left: {{phtotLeft}}px;"></cover-view>
+  <cover-view class="take-btn" bindtap="takePhoto" >
+  </cover-view>
+  </camera>
+</view> 

@@ -1,0 +1,39 @@
+<view class="container">
+  <view class="header">
+    <view class="i-steps-box">
+      <i-steps>
+        <i-step status="process">
+          <view slot="title">
+            身份认证
+          </view>
+
+        </i-step>
+        <i-step status="">
+          <view slot="title">
+            人脸识别
+          </view>
+
+        </i-step>
+        <i-step status="">
+          <view slot="title">
+            注册成功
+          </view>
+
+        </i-step>
+      </i-steps>
+    </view>
+  </view>
+  <view class="add-img">
+    <view class="add-item">
+      <view>身份证反面照（印有本人照片）</view>
+      <image class="add-icon-img"></image>
+    </view>
+    <view class="add-item">
+      <view>点击进行人脸拍照认证</view>
+      <image class="add-icon-img"></image>
+    </view>
+  </view>
+  <view class="btn" bindtap="faceRecognition">
+    <button>下一步</button>
+  </view>
+</view>

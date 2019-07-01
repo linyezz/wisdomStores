@@ -1,0 +1,42 @@
+<view class="container">
+  <view class="header">
+    <view class="i-steps-box">
+      <i-steps>
+        <i-step status="finish">
+          <view slot="title">
+            身份认证
+          </view>
+  
+        </i-step>
+        <i-step status="finish">
+          <view slot="title">
+            人脸识别
+          </view>
+  
+        </i-step>
+        <i-step status="process">
+          <view slot="title">
+            注册成功
+          </view>
+  
+        </i-step>
+      </i-steps>
+    </view>
+  </view>
+  
+  
+  <view class="middle">
+    <view class="success-icon">
+       <i-icon size='60' type="success_fill" />
+    </view>
+   <view class="success-tips1">注册成功！您以成功成为会员！</view>
+   <view class="success-tips2">充值后使用微信扫码上机</view>
+  </view>
+  
+  <button class="recharge" bindtap="toRecharge">开始充值</button>
+  
+  <view class="tohome" bindtap='toHome'>
+    返回首页
+  </view>
+     
+</view>

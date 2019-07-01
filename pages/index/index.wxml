@@ -1,7 +1,16 @@
 <!--index.wxml-->
 <view class="container">
-<i-button 
-type="primary" 
-bind:click="handleClick">
-click</i-button>
+
+  <view class="login" bindtap="attestation">
+    <view class="code-icon">
+      <i-icon size='50' type="businesscard" />
+    </view>
+    <text>身份认证</text>
+  </view>
+  <view class="code">
+    <view class="code-icon">
+      <i-icon size='50' type="scan" />
+    </view>
+    <text>扫码上机</text>
+  </view>
 </view>

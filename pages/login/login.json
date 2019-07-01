@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "注册手机号",
+  "usingComponents": {
+    "i-icon": "../../dist/icon/index"
+  }
+}
