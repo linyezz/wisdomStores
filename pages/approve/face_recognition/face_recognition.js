@@ -21,8 +21,15 @@ Page({
   onReady: function () {
 
   },
-
+  //去录制视频
   beginStart(){
-    
+    wx.chooseVideo({
+      sourceType:['camera'],
+      maxDuration:3,
+      camera:'front',
+      success(res){
+        console.log(res.tempFilePath)
+      }
+    })
   }
 })

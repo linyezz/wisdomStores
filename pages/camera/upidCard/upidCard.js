@@ -36,9 +36,6 @@ Page({
             title: '数据处理中',
             mask: true
           })
-          // that.canvas.setStrokeStyle('red')
-          // 这里有一些很神奇的操作,总结就是MD拍出来的照片规格居然不是统一的
-          //过渡页面中，对裁剪框的设定
           // that.canvas.strokeRect(phtotLeft, 120*baseWidth, 600*baseWidth, 960*baseWidth)
           that.canvas.draw()
           setTimeout(function () {

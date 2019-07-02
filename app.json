@@ -7,7 +7,8 @@
     "pages/approve/face_recognition/face_recognition",
     "pages/approve/success/success",
     "pages/camera/takeCardPhoto/takeCardPhoto",
-    "pages/camera/upidCard/upidCard"
+    "pages/camera/upidCard/upidCard",
+    "pages/camera/takeVideo/takeVideo"
   ],
   "window": {
     "backgroundTextStyle": "light",
