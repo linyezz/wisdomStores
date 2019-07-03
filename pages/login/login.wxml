@@ -18,10 +18,10 @@
   </view>
   <view class="allow-deal">
    <checkbox class="checkbox" value="{{is_agree}}" checked="{{checked}}"/>
-   <navigator class="nav" url="/pages/approve/cover/cover">《会员账户及相关服务协议》</navigator>
+   <navigator class="nav" >《会员账户及相关服务协议》</navigator>
   </view>
   
 <view class="btn">
-  <button>下一步</button>
+  <button bindtap='toCover'>下一步</button>
 </view>
 </view>

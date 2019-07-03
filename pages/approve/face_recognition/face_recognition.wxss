@@ -48,6 +48,7 @@
   align-items: center;
   font-size: 28rpx;
   margin: 20rpx auto;
+  justify-content: space-between
 }
 
 .left {

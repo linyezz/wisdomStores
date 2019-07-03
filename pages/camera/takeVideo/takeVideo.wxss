@@ -47,6 +47,24 @@
   transform: translate(-50%,-50%);
   
 }
+.finish-btn{
+   width: 120rpx;
+  height: 120rpx;
+  background: #00EC00;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.up-img{
+  width: 60rpx;
+  height:auto;
+}
 .record-tips{
   text-align: center;
 }

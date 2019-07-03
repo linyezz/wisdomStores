@@ -33,13 +33,16 @@ Page({
     let that=this;
     let is_record = that.data.is_record;
     let basewidth = that.data.basewidth;
-    that.ctx.draw();
+   
     if(is_record){
+      that.ctx.draw();
       that.setData({
         is_record:false
       })
       this.camera.startRecord({
-        
+        fail(e) {
+          console.log(e)
+        } 
       })
       let i = 0;
       let circle = setInterval(function(){
@@ -79,6 +82,7 @@ Page({
   loadCamera(){
     const context = wx.createCameraContext();
     this.camera = context;
+    console.log(context)
   },
   
   getVideo(){
@@ -90,10 +94,10 @@ Page({
          tempVideoPath:res.tempVideoPath,
          record_finish:true
        }) 
-       
+        that.ctx.draw();
       },
-      fail() {
-        console.log('失败')
+      fail(e) {
+        console.log(e)
       }
     })
   },
@@ -103,7 +107,10 @@ Page({
       is_record:true,
       record_finish:false
     }) 
-    that.recordingStart()
+    setTimeout(function(){
+      that.recordingStart()
+    },500)
+    
   }
  
 })

@@ -69,5 +69,13 @@ Page({
     this.setData({
       phoneNum:''
     })
+  },
+  toCover(){
+    wx.navigateTo({
+      url: '/pages/approve/cover/cover',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
   }
 })

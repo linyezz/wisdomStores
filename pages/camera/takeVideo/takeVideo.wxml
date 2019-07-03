@@ -18,9 +18,14 @@ poster='{{tempThumbPath}}'
   
    
    <canvas class='canvas' canvas-id='canvas'>
-    <cover-view class="start-btn" bindtap='recordingStart'>
-       
+    <cover-view wx-if='{{!record_finish}}' class="start-btn" bindtap='recordingStart'>
+     
      </cover-view>
+     <cover-view wx-if='{{record_finish}}' 
+      class="finish-btn"
+     >
+     <cover-image class="up-img" src="/img/uploade.png"></cover-image>
+     </cover-view>  
   </canvas>
   </view>
   <view wx-if='{{!record_finish}}' class="record-tips">点击录制3秒视频</view>

@@ -23,13 +23,11 @@ Page({
   },
   //去录制视频
   beginStart(){
-    wx.chooseVideo({
-      sourceType:['camera'],
-      maxDuration:3,
-      camera:'front',
-      success(res){
-        console.log(res.tempFilePath)
-      }
-    })
+   wx.navigateTo({
+     url: '/pages/camera/takeVideo/takeVideo',
+     success: function(res) {},
+     fail: function(res) {},
+     complete: function(res) {},
+   })
   }
 })
