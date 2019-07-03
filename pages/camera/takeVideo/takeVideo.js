@@ -103,6 +103,7 @@ Page({
       is_record:true,
       record_finish:false
     }) 
+    that.recordingStart()
   }
  
 })

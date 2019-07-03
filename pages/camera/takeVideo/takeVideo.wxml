@@ -24,7 +24,7 @@ poster='{{tempThumbPath}}'
   </canvas>
   </view>
   <view wx-if='{{!record_finish}}' class="record-tips">点击录制3秒视频</view>
-  <view wx-if='{{record_finish}}' class="record-tips2">重新录制</view>
+  <view wx-if='{{record_finish}}' class="record-tips2" bindtap='recordingAgain'>重新录制</view>
 </view>
 
 
