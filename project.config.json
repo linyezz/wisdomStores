@@ -40,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 6,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -88,6 +88,13 @@
 					"id": -1,
 					"name": "pages/camera/takeCardPhoto/takeCardPhoto",
 					"pathName": "pages/camera/takeCardPhoto/takeCardPhoto",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/camera/takeVideo/takeVideo",
+					"pathName": "pages/camera/takeVideo/takeVideo",
 					"scene": null
 				}
 			]

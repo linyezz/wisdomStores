@@ -1,1 +1,65 @@
-/* pages/camera/takeVideo/takeVideo.wxss */
+.camera{
+  width: 100%;
+  height: 810rpx;
+  position: relative;
+}
+.video{
+  width: 100%;
+  height: 810rpx;
+}
+.record-time{
+  width: 100%;
+  height: 80rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.red-rid{
+  width: 24rpx;
+  height: 24rpx;
+  border-radius: 50%;
+  background:red;
+  margin-right: 12rpx;
+}
+.timr-show{
+  color: #fff;
+  font-size: 24rpx;
+}
+.btn-box{
+  margin-top: 38rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.start-btn{
+  width: 120rpx;
+  height: 120rpx;
+  background: #EC6B7B;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+.record-tips{
+  text-align: center;
+}
+.canvas{
+  width: 100%;
+  height: 170rpx;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.record-tips2{
+  text-align: center;
+  margin-top: 80rpx;
+}

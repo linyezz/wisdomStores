@@ -1,2 +1,30 @@
-<!--pages/camera/takeVideo/takeVideo.wxml-->
-<text>pages/camera/takeVideo/takeVideo.wxml</text>
+<view class="container">
+  <camera 
+  class="camera"
+  device-position="front"
+  bindinitdone='loadCamera'
+  wx-if='{{!record_finish}}'
+  >
+  
+  <cover-view wx-if='{{!is_record}}' class="record-time">
+    <cover-view class="red-rid"></cover-view>
+    <cover-view class="timr-show">{{times}}</cover-view>
+  </cover-view>
+  </camera>
+<video wx-if='{{record_finish}}' class="video" src="{{tempVideoPath}}"
+poster='{{tempThumbPath}}'
+></video>
+ <view class="btn-box">
+  
+   
+   <canvas class='canvas' canvas-id='canvas'>
+    <cover-view class="start-btn" bindtap='recordingStart'>
+       
+     </cover-view>
+  </canvas>
+  </view>
+  <view wx-if='{{!record_finish}}' class="record-tips">点击录制3秒视频</view>
+  <view wx-if='{{record_finish}}' class="record-tips2">重新录制</view>
+</view>
+
+
