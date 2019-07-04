@@ -1,0 +1,15 @@
+/* pages/camera/authentication/authentication.wxss */
+.face-id{
+  width: 300rpx;
+  height: 300rpx;
+  margin: 150rpx auto;
+  border-radius: 50%;
+}
+.takephoto{
+  width: 676rpx;
+  height: 90rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 45rpx;
+  background: #1890FF;
+}

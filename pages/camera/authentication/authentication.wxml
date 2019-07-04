@@ -1,0 +1,11 @@
+<view class="container">
+  <camera 
+  class="face-id"
+  device-position="front"
+  bindinitdone='loadCamera'
+  >
+
+  
+  </camera>
+  <button class="takephoto">拍照验证</button>
+</view>

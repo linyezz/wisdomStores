@@ -7,7 +7,7 @@
     </view>
     <text>身份认证</text>
   </view>
-  <view class="code">
+  <view class="code" bindtap="authentication">
     <view class="code-icon">
       <i-icon size='50' type="scan" />
     </view>
