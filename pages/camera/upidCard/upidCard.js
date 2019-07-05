@@ -1,4 +1,5 @@
 // pages/camera/upidCard/upidCard.js
+const app =getApp()
 Page({
 
   /**
@@ -8,7 +9,7 @@ Page({
     width:0,
     height:0,
     tempFilePath: "",
-    baseWidth:1
+    baseWidth:1,
   },
 
   /**
@@ -16,7 +17,8 @@ Page({
    */
   onLoad: function (options) {
     const that=this;
-    that.path = options.path
+    that.path = options.path;
+    that.face = options.char;
     try{
       let system = wx.getSystemInfoSync();
       let baseWidth=system.windowWidth/750;
@@ -42,7 +44,7 @@ Page({
             wx.canvasToTempFilePath({//裁剪对参数
               canvasId: "image-canvas",
               x: phtotLeft,//画布x轴起点
-              y: 120*baseWidth,//画布y轴起点
+              y: 50*baseWidth,//画布y轴起点
               width: 600*baseWidth,//画布宽度
               height: 960*baseWidth,//画布高度
               destWidth: 600*baseWidth,//输出图片宽度
@@ -52,11 +54,15 @@ Page({
                 that.filePath = res.tempFilePath
                 //清除画布上在该矩形区域内的内容。
                 that.canvas.clearRect(0, 0, that.data.width, that.data.height)
-                that.canvas.drawImage(that.filePath,phtotLeft, 120*baseWidth, 600*baseWidth, 960*baseWidth)
+                that.canvas.drawImage(that.filePath,phtotLeft, 50*baseWidth, 600*baseWidth, 960*baseWidth)
                 that.canvas.draw()
                 wx.hideLoading()
                 //在此可进行网络请求
-                
+                if (that.face==1){
+                  app.globalData.idCardFont = that.filePath
+                }else{
+                  app.globalData.idCardBack = that.filePath
+                }
               },
               fail:function(e){
                 wx.hideLoading()

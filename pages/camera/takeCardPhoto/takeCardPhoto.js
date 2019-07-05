@@ -17,7 +17,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this
+    var that = this;
+    that.face = options.face
     that.ctx = wx.createCameraContext()
     wx.getSystemInfo({
       success: function (res) {
@@ -55,7 +56,7 @@ Page({
         })
         
         wx.navigateTo({
-          url: '/pages/camera/upidCard/upidCard?path=' + res.tempImagePath + '&char=0'
+          url: '/pages/camera/upidCard/upidCard?path=' + res.tempImagePath + '&char='+that.face
         })
       }
     })

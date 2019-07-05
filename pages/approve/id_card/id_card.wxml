@@ -23,17 +23,17 @@
       </i-steps>
     </view>
   </view>
-  <view class="add-img">
+  <view class="add-img" bindtap="faceRecognition(1)">
     <view class="add-item">
-      <view>身份证反面照（印有本人照片）</view>
+      <view>身份证正面面照（印有本人照片）</view>
       <image class="add-icon-img"></image>
     </view>
-    <view class="add-item">
-      <view>点击进行人脸拍照认证</view>
+    <view class="add-item" bindtap="faceRecognition(2)">
+      <view>身份证反面照（印有国徽）</view>
       <image class="add-icon-img"></image>
     </view>
   </view>
-  <view class="btn" bindtap="faceRecognition">
+  <view class="btn" >
     <button>下一步</button>
   </view>
 </view>

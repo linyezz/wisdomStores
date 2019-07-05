@@ -17,7 +17,7 @@ camera{
 }
 .card-box{
   position: absolute;
-  top: 120rpx;
+  top: 50rpx;
   height: 960rpx;
   width:600rpx;
   border: 2rpx solid #D8D8D8;

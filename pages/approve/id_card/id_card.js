@@ -50,9 +50,9 @@ Page({
 
   },
 
-  faceRecognition () {
+  faceRecognition (e) {
     wx.navigateTo({
-      url: '/pages/approve/face_recognition/face_recognition',
+      url: '/pages/approve/face_recognition/face_recognition?face='+e,
       success: function(res) {},
       fail: function(res) {},
       complete: function(res) {},
